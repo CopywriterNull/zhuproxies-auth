@@ -4,7 +4,7 @@ from oauth import Oauth
 app = Flash(__name__)
 @app.route("/",methods = ["get"])
 def index():
-  return redirect()
+  return redirect(Oauth.discord_login_url)
   
   
 @app.route("/login",methods = ["get"])
